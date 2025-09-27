@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Furniro</title>
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="assets/images/Meubel House_Logos-05.png" alt="">
+                <h3><span>Furniro</span></h3>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="far fa-heart"></i></a>
+                <a href="./cart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+            </div>
+        </nav>
+
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="contact-hero-image">
+                <img src="assets/images/shopSlider.png" alt="Contact Hero">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Contact Us</h2>
+                        <div class="breadcrumb-links">
+                            <a href="./index.html">Home</a>
+                            <span class="breadcrumb-separator">></span>
+                            <span class="breadcrumb-current">Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-description">
+                            We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Address</h4>
+                                    <p>123 Furniture Street<br>Damascus, Syria 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>+963 11 123 4567<br>+963 11 765 4321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>info@furniro.com<br>support@furniro.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-section">
+                        <h2 class="form-title">Send us a Message</h2>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="product">Product Question</option>
+                                    <option value="order">Order Support</option>
+                                    <option value="shipping">Shipping Information</option>
+                                    <option value="return">Return/Exchange</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>What is your delivery time?</h4>
+                            <p>We typically deliver within 3-7 business days for in-stock items. Custom orders may take 2-4 weeks.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you offer assembly services?</h4>
+                            <p>Yes, we provide professional assembly services for an additional fee. Contact us for more details.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What is your return policy?</h4>
+                            <p>We offer a 30-day return policy for unused items in original packaging. Custom orders are non-returnable.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you ship internationally?</h4>
+                            <p>Currently, we ship within Syria, Lebanon, Jordan, and Turkey. International shipping is coming soon.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>What payment methods do you accept?</h4>
+                            <p>We accept cash on delivery, bank transfers, and major credit cards.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you offer warranties?</h4>
+                            <p>Yes, all our furniture comes with a 2-year warranty against manufacturing defects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <img src="assets/images/Meubel House_Logos-05.png" alt="Furniro Logo">
+                        <h3>Furniro</h3>
+                    </div>
+                    <p class="footer-description">
+                        We provide the best furniture for your home and office. Quality products with modern design and affordable prices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2024 Furniro. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

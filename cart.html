@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="assets/images/Meubel House_Logos-05.png" alt="">
+                <h3><span>Furniro</span></h3>
+            </div>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html">shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="far fa-heart"></i></a>
+                <a href="./cart.html" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+            </div>
+
+        </nav>
+
+        <!-- Cart Hero Section -->
+        <section class="cart-hero">
+            <div class="cart-hero-image">
+                <img src="assets/images/shopSlider.png" alt="Cart Hero">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h2 class="hero-title">Cart</h2>
+                        <div class="breadcrumb-links">
+                            <a href="./index.html">Home</a>
+                            <span class="breadcrumb-separator">></span>
+                            <span class="breadcrumb-current">Cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section class="cart-section">
+            <div class="cart-container">
+                <h1 class="cart-title">Shopping Cart</h1>
+                
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item" data-id="1">
+                        <div class="item-image">
+                            <img src="assets/images/Images (1).png" alt="Modern Sofa Set">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Modern Sofa Set</h3>
+                            <p class="item-description">Comfortable 3-seater sofa with premium fabric upholstery</p>
+                            <div class="item-price">2,500,000 SYP</div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus" onclick="changeQuantity(1, -1)">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus" onclick="changeQuantity(1, 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="edit-btn" onclick="editItem(1)">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="delete-btn" onclick="deleteItem(1)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item" data-id="2">
+                        <div class="item-image">
+                            <img src="assets/images/Images (2).png" alt="Wooden Dining Table">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Wooden Dining Table</h3>
+                            <p class="item-description">Solid oak dining table with 6 matching chairs</p>
+                            <div class="item-price">3,200,000 SYP</div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus" onclick="changeQuantity(2, -1)">-</button>
+                                <span class="quantity-value">2</span>
+                                <button class="quantity-btn plus" onclick="changeQuantity(2, 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="edit-btn" onclick="editItem(2)">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="delete-btn" onclick="deleteItem(2)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item" data-id="3">
+                        <div class="item-image">
+                            <img src="assets/images/Images (3).png" alt="Office Desk">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">Office Desk</h3>
+                            <p class="item-description">Ergonomic office desk with storage compartments</p>
+                            <div class="item-price">1,800,000 SYP</div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity:</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn minus" onclick="changeQuantity(3, -1)">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus" onclick="changeQuantity(3, 1)">+</button>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <button class="edit-btn" onclick="editItem(3)">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="delete-btn" onclick="deleteItem(3)">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span class="subtotal">7,500,000 SYP</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span class="shipping">Free</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span class="total-amount">7,500,000 SYP</span>
+                    </div>
+                    <button class="checkout-btn"><a href="./checkout.html">Proceed to Checkout</a> </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                
+                <div class="footer-section company-info">
+                    <div class="footer-logo">
+                        <img src="assets/images/Meubel House_Logos-05.png" alt="Furniro Logo">
+                        <h3>Furniro</h3>
+                    </div>
+                    <p class="footer-description">
+                        We provide the best furniture for your home and office. Quality products with modern design and affordable prices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-bottom-left">
+                        <p>&copy; 2024 Furniro. All rights reserved.</p>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Delete item function
+        function deleteItem(itemId) {
+            if (confirm('Are you sure you want to remove this item from your cart?')) {
+                const cartItem = document.querySelector(`[data-id="${itemId}"]`);
+                if (cartItem) {
+                    // Add fade out animation
+                    cartItem.style.transition = 'all 0.3s ease';
+                    cartItem.style.opacity = '0';
+                    cartItem.style.transform = 'translateX(-100%)';
+                    
+                    setTimeout(() => {
+                        cartItem.remove();
+                        updateCartSummary();
+                        showNotification('Item removed from cart', 'success');
+                    }, 300);
+                }
+            }
+        }
+
+        // Edit item function
+        function editItem(itemId) {
+            const cartItem = document.querySelector(`[data-id="${itemId}"]`);
+            const itemName = cartItem.querySelector('.item-name').textContent;
+            const itemPrice = cartItem.querySelector('.item-price').textContent;
+            
+            // For now, just show an alert. In a real app, this would open an edit modal
+            alert(`Edit functionality for: ${itemName}\nPrice: ${itemPrice}\n\nThis would open an edit modal in a real application.`);
+        }
+
+        // Change quantity function
+        function changeQuantity(itemId, change) {
+            const cartItem = document.querySelector(`[data-id="${itemId}"]`);
+            const quantitySpan = cartItem.querySelector('.quantity-value');
+            let currentQuantity = parseInt(quantitySpan.textContent);
+            let newQuantity = currentQuantity + change;
+            
+            if (newQuantity < 1) {
+                deleteItem(itemId);
+                return;
+            }
+            
+            quantitySpan.textContent = newQuantity;
+            updateCartSummary();
+        }
+
+        // Update cart summary
+        function updateCartSummary() {
+            const cartItems = document.querySelectorAll('.cart-item');
+            let subtotal = 0;
+            
+            cartItems.forEach(item => {
+                const priceText = item.querySelector('.item-price').textContent;
+                const price = parseInt(priceText.replace(/[^\d]/g, ''));
+                const quantity = parseInt(item.querySelector('.quantity-value').textContent);
+                subtotal += price * quantity;
+            });
+            
+            const subtotalElement = document.querySelector('.subtotal');
+            const totalElement = document.querySelector('.total-amount');
+            
+            if (subtotalElement && totalElement) {
+                subtotalElement.textContent = subtotal.toLocaleString() + ' SYP';
+                totalElement.textContent = subtotal.toLocaleString() + ' SYP';
+            }
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#27ae60' : type === 'error' ? '#e74c3c' : '#3498db'};
+                color: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+                max-width: 300px;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideIn 0.3s ease reverse';
+                setTimeout(() => notification.remove(), 300);
+            }, 3000);
+        }
+
+        // Add CSS for notification animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            .notification-content {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
